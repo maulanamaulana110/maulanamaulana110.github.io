@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabim 2</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background-color: #fff8fb;
+      background-image: url('images/materi-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+    }
+
+    .materi-section {
+      padding: 100px 20px;
+    }
+
+    .materi-card {
+      background: #fff0f6;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(231, 84, 128, 0.15);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .materi-card:hover {
+      background: #ffe9f1;
+      transform: translateY(-2px);
+    }
+
+    .materi-card h5 {
+      font-size: 1.2rem;
+    }
+
+    .toggle-icon {
+      font-size: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .materi-card.active .toggle-icon {
+      transform: rotate(45deg);
+    }
+
+    .materi-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .materi-card.active .materi-content {
+      max-height: 1000px;
+      opacity: 1;
+      margin-top: 15px;
+    }
+
+    .materi-content ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .text-pink {
+      color: #e75480;
+    }
+
+    .btn-pink {
+      background-color: #ff8fb1;
+      border: none;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-pink:hover {
+      background-color: #ff7ba3;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(90deg, #ffb6c1, #ff7ba3);
+      border: none;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+
+    .navigation-buttons {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="materi-section">
+    <div class="container">
+      <h2 class="text-center text-pink mb-5 fw-bold">📘 Masa Bimbingan 2</h2>
+
+      <!-- CARD 1 -->
+      <div class="materi-card mb-4" onclick="toggleCard(this)">
+        <h5 class="fw-bold text-pink mb-0 d-flex justify-content-between align-items-center">
+          Alur Advokasi
+          <span class="toggle-icon">＋</span>
+        </h5>
+
+        <div class="materi-content mt-3">
+          <p><b>Advokasi</b> adalah upaya untuk memberikan pembelaan dan dukungan bagi masyarakat atau pihak yang haknya diambil.</p>
+
+    <p><b>Tujuan Advokasi:</b></p>
+    <ul>
+      <li>Agar suara atau aspirasi yang disampaikan dapat diperhatikan masyarakat luas dan pembuat kebijakan.</li>
+      <li>Mencari solusi lewat kebijakan atau keputusan yang lebih adil.</li>
+      <li>Memberdayakan kelompok terdampak agar punya suara.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Peran Advokasi:</b></p>
+    <p>Advokasi adalah fungsi vital ormawa. Ormawa sebagai “laboratorium kader” menjadi saluran formal aspirasi, inisiasi, dan gagasan positif.</p>
+
+    <p><b>Landasan Advokasi:</b> dasar pijakan kegiatan advokasi agar memiliki arah, legitimasi, dan kekuatan.</p>
+    <ul>
+      <li><b>Landasan Hukum:</b> merujuk pada UUD 1945, UU Perlindungan Anak, UU HAM, peraturan pemerintah, hingga peraturan daerah. Memberi legitimasi agar advokasi sah secara hukum.</li>
+      <li><b>Landasan Sosial:</b> bertumpu pada nilai dan budaya masyarakat, seperti keadilan sosial dan kebersamaan, agar mudah diterima.</li>
+      <li><b>Landasan Moral & Etika:</b> didukung nilai kemanusiaan universal—keadilan, kesetaraan, kepedulian—sebagai dasar kebenaran moral.</li>
+      <li><b>Landasan Politik:</b> berdasar hak warga negara untuk menyampaikan pendapat, kritik, dan aspirasi; memengaruhi kebijakan publik.</li>
+      <li><b>Landasan Akademik / Ilmiah:</b> menggunakan data, riset, dan kajian agar argumen kuat dan kredibel.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Hak dan Kewajiban Mahasiswa:</b></p>
+    <ul>
+      <li><b>1. Organisasi dan Advokasi</b><br>
+        <b>Hak:</b> wadah pengembangan diri, dukungan pendanaan, pembinaan, dan menyampaikan aspirasi.<br>
+        <b>Kewajiban:</b> menjaga nama baik, mengamalkan nilai Islam, menjaga Pancasila & NKRI, serta menaati kode etik.
+      </li>
+      <li><b>2. Akademik</b><br>
+        <b>Hak:</b> memperoleh pendidikan dan bimbingan dari dosen.<br>
+        <b>Kewajiban:</b> mengerjakan dan mengumpulkan tugas tepat waktu.
+      </li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Alur Advokasi:</b></p>
+    <ul>
+      <li><b>Internal Mahasiswa:</b> tahap awal di kelas/angkatan.</li>
+      <li><b>Jurusan:</b> aspirasi ditampung dan dibahas oleh HMJ.</li>
+      <li><b>Fakultas:</b> masalah lintas jurusan ditangani DEMA-FST (Divisi Advokasi).</li>
+      <li><b>Birokrasi:</b> SEMA-FST sebagai pengawas, mengelola isu HMJ & DEMA-FST, lalu diadvokasi ke birokrasi fakultas.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Peran Ormawa:</b></p>
+    <ul>
+      <li><b>HMJ:</b> menampung & menyalurkan aspirasi mahasiswa jurusan.</li>
+      <li><b>DEMA-FST:</b> badan eksekutif tingkat fakultas.</li>
+      <li><b>SEMA-FST:</b> badan legislatif/pengawas fakultas yang mengatur anggaran & peraturan.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Kritis adalah Identitas Mahasiswa</b></p>
+    <ul>
+      <li><b>Landasan intelektual:</b> wajib menganalisa kebijakan.</li>
+      <li><b>Tujuan kritis:</b> mengidentifikasi antara idealisme dan realita.</li>
+      <li><b>Kesadaran diri:</b> memahami peran ganda—sebagai pelajar & agen perubahan sosial.</li>
+      <li><b>Implikasi di HIMATIF:</b> mampu membedakan masalah personal dan masalah kolektif yang layak diadvokasi.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Etika Penyampaian Pendapat:</b></p>
+    <ul>
+      <li><b>Basis data:</b> gunakan fakta, data, dan regulasi yang relevan.</li>
+      <li><b>Saluran resmi:</b> utamakan jalur audiensi atau surat resmi dari HIMATIF ke prodi/fakultas.</li>
+      <li><b>Bahasa akademik:</b> hindari provokasi, gunakan terminologi hukum yang benar dan sopan.</li>
+      <li><b>Konsolidasi:</b> pastikan aspirasi mewakili suara mayoritas, bukan kepentingan pribadi.</li>
+    </ul>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="materi-card mb-4" onclick="toggleCard(this)">
+        <h5 class="fw-bold text-pink mb-0 d-flex justify-content-between align-items-center">
+          Manajemen Waktu
+          <span class="toggle-icon">＋</span>
+        </h5>
+        <div class="materi-content mt-3">
+           <p><b>Manajemen waktu</b> adalah proses merencanakan, mengatur, dan mengendalikan waktu agar dapat digunakan secara efektif dan efisien untuk mencapai tujuan tertentu.</p>
+
+    <hr class="my-4">
+
+    <p><b>Prinsip-prinsip Manajemen Waktu:</b></p>
+    <ul>
+      <li><b>Prioritas:</b> membedakan mana yang lebih penting dan mendesak antara urusan akademik dan organisasi.</li>
+      <li><b>Batas waktu:</b> membuat jadwal yang jelas agar tugas akademik dan kegiatan organisasi tidak saling bertabrakan.</li>
+      <li><b>Prokrastinasi:</b> kebiasaan menunda tugas akademik atau organisasi sehingga akhirnya menumpuk.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Pengelolaan Stres:</b></p>
+    <p>Upaya untuk mengendalikan tekanan fisik maupun mental agar tidak mengganggu aktivitas sehari-hari, baik dalam bidang akademik maupun organisasi.</p>
+
+    <p><b>Strategi Pengelolaan Stres:</b></p>
+    <ul>
+      <li>Atur waktu dengan baik.</li>
+      <li>Istirahat yang cukup.</li>
+      <li>Olahraga dan relaksasi.</li>
+      <li>Manajemen prioritas.</li>
+      <li>Cari dukungan sosial.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p><b>Alat Pengukur & Evaluasi:</b></p>
+    <p>Digunakan untuk mengetahui efektivitas dari manajemen waktu yang dilakukan, serta menilai apakah cara yang dipakai sudah membantu dalam mencapai tujuan.</p>
+
+    <p><b>Langkah Evaluasi:</b></p>
+    <ul>
+      <li>Bandingkan rencana dengan realita.</li>
+      <li>Identifikasi hambatan atau distraksi.</li>
+      <li>Ukur produktivitas.</li>
+      <li>Refleksi & lakukan perbaikan.</li>
+    </ul>
+
+    <blockquote class="fst-italic text-secondary border-start border-3 ps-3 mt-3">
+      “Waktu adalah sumber daya paling berharga — kelola dengan bijak agar hidupmu tidak sekadar sibuk, tapi juga produktif.”
+    </blockquote>
+        </div>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="d-flex justify-content-between navigation-buttons">
+        <a href="materi2.html" class="btn btn-gradient">← Back to mabim 1</a>
+        <a href="materi4.html" class="btn btn-pink">Next →</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleCard(card) {
+      document.querySelectorAll(".materi-card").forEach((c) => {
+        if (c !== card) c.classList.remove("active");
+      });
+      card.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
